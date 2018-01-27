@@ -18,6 +18,18 @@ def wkw(message):
 
     message.react('joy')
 
+@listen_to('off', re.IGNORECASE)
+def off(message):
+    message.reply('Semoga harimu menyenangkan...')
+
+    message.react('hugging_face')
+
+@listen_to('senin', re.IGNORECASE)
+def senin(message):
+    message.reply('Hari masih senin ayo semangat. Jangan kasih kendor')
+
+    message.react('hugging_face')
+
 def main():
     bot = Bot()
     bot.run()
