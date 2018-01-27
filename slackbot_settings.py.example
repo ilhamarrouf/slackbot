@@ -1,0 +1,5 @@
+API_TOKEN = "<Your API TOKEN>"
+DEFAULT_REPLY = "Mbuhh aku gak ngerti koen ngomong opo :v"
+PLUGINS = [
+    'slackbot.plugins',
+]
