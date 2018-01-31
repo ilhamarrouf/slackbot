@@ -28,6 +28,12 @@ def wkw(message):
 
     message.react('joy')
 
+@listen_to('on')
+def on(message):
+    message.reply('Tumben kerja???')
+
+    message.react('confused')
+
 @listen_to('off', re.IGNORECASE)
 def off(message):
     message.reply(random.choice(['Semoga harimu menyenangkan...',
