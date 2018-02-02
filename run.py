@@ -15,7 +15,8 @@ def afk(message):
     message.reply(random.choice(['Hayo mau kemana???',
                                  'Udah ijin sama bosque???',
                                  'Jangan lama-lama nanti bosque kangen',
-                                 'Kerjaan sudah kelar belom???']))
+                                 'Kerjaan sudah kelar belom???',
+                                 'Ndang balik lho ya']))
 
     message.react(random.choice(['ghost',
                                  'thinking_face',
@@ -44,21 +45,34 @@ def off(message):
 
 @listen_to('senin', re.IGNORECASE)
 def senin(message):
-    message.reply('Hari masih senin ayo semangat. Jangan kasih kendor')
+    message.reply(random.choice(['Mulai hari dengan basmalah ya!',
+                                 'Hari masih senin ayo semangat. Jangan kasih kendor']))
 
     message.react('hugging_face')
 
 @listen_to('bos', re.IGNORECASE)
 def bos(message):
-    message.reply('Disini aku bosnya :p')
+    message.reply(random.choice(['Disini aku bosnya :p',
+                                'Ngapain manggil-manggil?',
+                                'Oi, ada apa?']))
 
     message.react('ok_hand')
 
 @listen_to('maaf', re.IGNORECASE)
 def maaf(message):
-    message.reply('Karena bosque baik, maka bosque maafin')
+    message.reply(random.choice(['Karena bosque baik, maka bosque maafin',
+                                'Lebaran masih lama cuy']))
 
     message.react('kissing_heart')
+
+@listen_to('cok', re.IGNORECASE)
+def maaf(message):
+    message.reply(random.choice(['Misuh-misuh tak tapuk lho lambemu!',
+                                'Hush, lambe ayam',
+                                'Cak cok cak cok, mulut apa slebor itu?']))
+
+    message.react(random.choice(['rage',
+                                 'poop']))
 
 def main():
     bot = Bot()
