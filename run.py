@@ -66,7 +66,7 @@ def maaf(message):
     message.react('kissing_heart')
 
 @listen_to('cok', re.IGNORECASE)
-def maaf(message):
+def misuh(message):
     message.reply(random.choice(['Misuh-misuh tak tapuk lho lambemu!',
                                 'Hush, lambe ayam',
                                 'Cak cok cak cok, mulut apa slebor itu?']))
